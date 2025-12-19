@@ -154,46 +154,6 @@ print_this_list.print_list()
 
 ---
 
-## Print list
-The `print_list` method allows you to **traverse the linked list** and print the value of each node from `head` to `tail`.
-
-This method is useful for debugging and understanding how nodes are connected.
-
-### Requirements
-- Start from the `head` node
-- Traverse using the `next` pointer
-- Print each node's value
-- Stop when the current node becomes `None`
-
-### Code Implementation
-```
-def print_list(self):
-    temp = self.head
-    while temp is not None:
-        print(temp.value)
-        temp = temp.next
-
-print_this_list = LinkedList(10)
-print_this_list.print_list()
-```
-
-### Explanation
-- `temp = self.head` → Start traversal at the first node
-- `while temp is not None:` → Continue until the end of the list
-- `print(temp.value)` → Print the current node's value
-- `temp = temp.next` → Move to the next node
-
-### Output
-```
-10
-```
-
-### Time Complexity
-
-`O(n)` → Every node is visited once
-
----
-
 ## Append
 The `append` method adds a **new node to the end** of the linked list. This is an efficient operation because we maintain a `tail` pointer.
 
@@ -608,10 +568,6 @@ print(remove_list.remove(2).value)
 print('Full list:')
 remove_list.print_list()     
 ```
-
-
-
-
 
 ### Explanation
 - `node = self.get(index)`, `pre_node = self.get(index - 1)` → Get the node and the node **before** that index

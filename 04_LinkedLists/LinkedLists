@@ -250,4 +250,12 @@ remove_list.print_list()
 
 # Reverse
 print("----------- Reverse -----------")
- 
+reverse_list = LinkedList(1)
+reverse_list.append(2)
+reverse_list.append(5)
+reverse_list.append(4)
+reverse_list.append(3)
+reverse_list.reverse()
+
+print('LL after reverse():')
+reverse_list.print_list()
