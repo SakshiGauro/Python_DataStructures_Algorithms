@@ -551,6 +551,5 @@ class Swap_Nodes(unittest.TestCase):
         ll.swap_pairs()
         self.assertEqual(ll.to_list(), [])
 
-
 if __name__ == '__main__':
     unittest.main()
